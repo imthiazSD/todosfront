@@ -1,0 +1,148 @@
+/* src/components/Notes/Notes.css */
+
+/* Base styles for the Notes component */
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 80vw;
+  height: 100vh;
+}
+
+/* Header styles */
+.notes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Form styles */
+.notes-form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.notes-form input,
+.notes-form textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.notes-form button {
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.notes-form button:hover {
+  background-color: #0056b3;
+}
+
+/* Note item styles */
+.note-item {
+  margin: 10px 0;
+  padding: 15px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+.note-item:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Button styles for edit and delete */
+.note-item button {
+  margin-right: 5px;
+  padding: 5px 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.note-item button:hover {
+  background-color: #218838;
+}
+
+.note-item button.delete {
+  background-color: #dc3545;
+}
+
+.note-item button.delete:hover {
+  background-color: #c82333;
+}
+
+/* Scrollable notes list */
+.notes-list {
+  /* max-height: 300px;  */
+  overflow-y: auto; /* Enable vertical scrolling */
+  margin-top: 10px; /* Add some space above the list */
+}
+
+.note-list ul,
+li {
+  list-style: none; /* Remove dot from list */
+  padding: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .notes-container {
+    padding: 10px;
+  }
+
+  .notes-form input,
+  .notes-form textarea {
+    font-size: 14px;
+  }
+
+  .notes-form button {
+    font-size: 14px;
+  }
+
+  .note-item {
+    padding: 10px;
+  }
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.edit-input,
+.edit-textarea {
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.edit-button {
+  background-color: #4caf50; /* Green */
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.edit-button:hover {
+  background-color: #45a049; /* Darker green */
+}
